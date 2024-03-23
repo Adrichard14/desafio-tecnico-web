@@ -1,0 +1,493 @@
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.container-home {
+  /* background: rgba(235, 234, 248, 0.08); */
+  background: linear-gradient(180deg, #121113 0%, rgba(18, 17, 19, 0.46) 49.48%, #121113 100%);
+  background-image: linear-gradient(180deg, #121113 0%, rgba(18, 17, 19, 0.46) 49.48%, #121113 100%), url('./assets/backgropund-krists-luhaers-unsplash.png');
+  background-position: 0 -153px;
+}
+
+p {
+  font-family: 'Montserrat';
+}
+
+input {
+  font-family: "Roboto" !important;
+}
+
+body {
+  background-color: #121113 !important;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.cubos-logo {
+  width: 160px;
+}
+
+.main-nav {
+  background: rgba(18, 17, 19, 1);
+  border-bottom: 1px solid #49474E;
+}
+
+.main-nav .site-title {
+  color: #fff;
+  font-weight: 700;
+}
+
+footer.main-footer {
+  background: rgba(18, 17, 19, 1);
+  border-top: 1px solid #49474E;
+}
+
+footer.main-footer p {
+  margin-bottom: 0;
+  padding: 10px 0;
+
+  color: #B5B2BC;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+
+.search-input {
+  padding: 15px;
+  width: 100%;
+  border: 1px solid rgba(60, 57, 63, 1);
+  background: rgba(26, 25, 27, 1);
+  color: #FFFFFF;
+  background-image: url('./assets/search.svg');
+  background-repeat: no-repeat;
+  background-position: 98% 50%;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.search-input-containter {
+  width: 100%;
+  margin-right: 10px;
+}
+
+.search-input:active,
+.search-input:focus {
+  border-color: #8E4EC6;
+  outline: none;
+}
+
+.search-icon {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(65deg) brightness(104%) contrast(103%);
+}
+
+.filter-button {
+  background: rgba(183, 68, 247, 0.08);
+  padding: 15px;
+  outline: none;
+  border: none;
+}
+
+.lightmode-button {
+  background: rgba(183, 68, 247, 0.08);
+  padding: 15px;
+  outline: none;
+  border: none;
+}
+
+.box-movie {
+  width: 18%;
+  min-height: 355px;
+  background-repeat: no-repeat;
+  display: flex;
+  background-size: cover;
+}
+
+a.box-movie {
+  text-decoration: none;
+}
+
+.movie-list {
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.movie-title {
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.box-movie:hover .movie-genre {
+  display: block;
+}
+
+.box-movie:hover .movie-rating {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie-genre {
+  color: #B4B4B4;
+  font-family: 'Montserrat';
+  display: none;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.movie-rating {
+  display: none;
+}
+
+.movie-detail-sinopse-title {
+  font-weight: 700;
+  font-family: "Montserrat";
+  color: #EEEEF0;
+  font-size: 16px;
+}
+
+.movie-detail-sinopse,
+.movie-detail-original-title,
+.movie-detail-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: #EEEEF0;
+}
+
+.movie-detail-title {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  color: #fff;
+}
+
+.box-sinopse {
+  background: rgba(35, 34, 37, 0.6);
+  padding: 15px;
+}
+
+.movie-detail-detail {
+  background: rgba(35, 34, 37, 0.6);
+  padding: 15px;
+  height: fit-content;
+}
+
+.movie-detail-detail h5 {
+  color: #B5B2BC;
+  font-size: 12px;
+  font-family: "Montserrat";
+}
+
+.movie-detail-detail p {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Montserrat";
+}
+
+.movie-detail-genre {
+  background: rgba(35, 34, 37, 0.6);
+  color: #FFFFFF;
+  padding: 15px;
+}
+
+.movie-detail-genre-detail {
+  font-size: 12px;
+  font-family: "Montserrat";
+  padding: 8px;
+  border-radius: 2px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background: #C150FF2E;
+}
+
+.movie-detail-genre-title {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+
+.movie-detail-poster {
+  min-width: 44%;
+}
+
+.row-movie-detail {
+  background: linear-gradient(180deg, #121113 0%, rgba(18, 17, 19, 0.46) 49.48%, #121113 100%);
+  /* background-image: linear-gradient(180deg, #121113 0%, rgba(18, 17, 19, 0.46) 49.48%, #121113 100%), url('./assets/backgropund-krists-luhaers-unsplash.png'); */
+  padding: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.row-trailer .movie-detail-trailer-label {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+
+.filters input,
+.filters select {
+  padding: 12px;
+  width: 100%;
+  border: 1px solid rgba(60, 57, 63, 1);
+  background: rgba(26, 25, 27, 1);
+  color: #FFFFFF;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.filters input:hover,
+.filters input:focus,
+.filters select:hover,
+.filters select:focus {
+  border: 1px solid #8E4EC6;
+  background: rgba(26, 25, 27, 1);
+  color: #FFFFFF;
+}
+
+.filters label {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 12px;
+  color: #EEEEF0;
+}
+
+::placeholder {
+  color: #6F6D78 !important;
+}
+
+.submit-filter {
+  outline: none;
+  border: none;
+  background-color: #8E4EC6;
+  border-radius: 2px;
+  padding: 12px 20px 12px 20px;
+  color: #FFF;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16;
+}
+
+.submit-filter:hover {
+  background: #9A5CD0;
+  color: #FFFFFF;
+}
+
+.submit-filter:active {
+  background: #8457AA;
+}
+
+.overview-box {
+  margin-left: 1.5rem !important;
+}
+
+.item-pagination {
+  text-decoration: none;
+  padding: 12px 20px 12px 20px;
+  border-radius: 2px;
+  background: #8E4EC6;
+  margin: 0 10px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.item-pagination.active {
+  background: #242326;
+}
+
+.item-pagination.disabled {
+  background: #242326;
+}
+
+.popularity-row-mobile {
+  display: none;
+}
+.popularity-row-desk {
+  display: flex;
+}
+@media(max-width: 991px) {
+  .col-movie-poster {
+    padding: 0 !important;
+  }
+  .popularity-row-desk {
+    display: none !important;
+  }
+  .popularity-row-mobile {
+    display: flex !important;
+  }
+  .item-pagination {
+    padding: 12px 15px 12px 15px;
+  }
+  .item-pagination.item-left,
+  .item-pagination.item-right {
+    padding: 12px 12px 12px 12px;
+  }
+
+  .item-pagination {
+    margin: 0 5px;
+  }
+
+  .row-movie-detail {
+    background-image: none !important;
+    padding: 0;
+  }
+
+  .overview-box {
+    margin-top: 10px;
+    margin-left: 0 !important;
+  }
+
+  .row-filter {
+    flex-direction: column;
+  }
+
+  .col-filter {
+    width: 100% !important;
+    margin: 5px 0;
+  }
+
+  .col-movie-poster {
+    flex-direction: column;
+  }
+}
+
+/* START PHONE QUERY */
+@media(max-width: 481px) {
+  .box-movie {
+    width: 47% !important;
+    min-height: 244px !important;
+    background-position: center !important;
+    background-size: cover !important;
+  }
+
+  .movie-title {
+    font-size: 14px;
+  }
+
+  .movie-genre {
+    font-size: 13px;
+  }
+}
+
+/* END PHONE QUERY */
+
+/* START TABLET QUERY */
+@media(min-width: 482px) and (max-width: 766px) {
+  .box-movie {
+    width: 48%;
+    min-height: 362px;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+/* START TABLET QUERY */
+@media(min-width: 767px) and (max-width: 990px) {
+  .box-movie {
+    width: 31%;
+    min-height: 311px;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+/* END PHONE QUERY */
+
+
+/* START SMALL NOTEBOOK SCREENS QUERY */
+@media(min-width: 990px) and (max-width: 1200px) {
+  .box-movie {
+    width: 32%;
+    min-height: 434px;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+/* END SMALL NOTEBOOK SCREENS QUERY */
+
+/* START MEDIUM SCREENS QUERY */
+@media(min-width: 1200px) and (max-width: 1400px) {
+  .box-movie {
+    width: 23%;
+    min-height: 393px;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+/* END SMALL SCREENS QUERY */
