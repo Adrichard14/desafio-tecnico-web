@@ -1,3 +1,4 @@
+/* TODO: Remove unused CSS */
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -376,22 +377,33 @@ a.box-movie {
 .popularity-row-mobile {
   display: none;
 }
+
 .popularity-row-desk {
   display: flex;
 }
+
 @media(max-width: 991px) {
+  #sidebarMenu {
+    max-height: 100vh;
+    overflow: scroll;
+  }
+
   .col-movie-poster {
     padding: 0 !important;
   }
+
   .popularity-row-desk {
     display: none !important;
   }
+
   .popularity-row-mobile {
     display: flex !important;
   }
+
   .item-pagination {
     padding: 12px 15px 12px 15px;
   }
+
   .item-pagination.item-left,
   .item-pagination.item-right {
     padding: 12px 12px 12px 12px;
@@ -490,4 +502,55 @@ a.box-movie {
   }
 }
 
+
+
 /* END SMALL SCREENS QUERY */
+
+
+.default-theme-btn {
+  text-decoration: none !important;
+  padding: 12px 20px 12px 20px !important;
+  border-radius: 2px !important;
+  background: #8E4EC6 !important;
+  margin: 0 10px !important;
+  color: #FFFFFF !important;
+  cursor: pointer !important;
+  width: max-content;
+}
+
+.default-theme-btn:hover {
+  background: #9A5CD0 !important;
+  outline: none !important;
+  border: none !important;
+}
+
+.default-theme-btn:active,
+.default-theme-btn:focus {
+  background: #8457AA !important;
+  outline: none !important;
+  border: none !important;
+}
+
+.default-theme-secondary-btn {
+  text-decoration: none !important;
+  padding: 12px 20px 12px 20px !important;
+  border-radius: 2px !important;
+  background: #B744F7 !important;
+  margin: 0 10px !important;
+  color: #FFFFFF !important;
+  cursor: pointer !important;
+  width: max-content;
+}
+
+.default-theme-secondary-btn:hover {
+  background: #C150FF !important;
+  outline: none !important;
+  border: none !important;
+}
+
+.default-theme-secondary-btn:active,
+.default-theme-secondary-btn:focus {
+  background: #8457AA !important;
+  outline: none !important;
+  border: none !important;
+}

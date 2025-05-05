@@ -20,6 +20,7 @@ const useMovieTrailer = (id: number) => {
         if(data.results[0]) {
           setTrailer(data.results[0]);
         }
+        console.log(trailer);
       } catch (error) {
         console.log(error);
         setError('Algo deu errado!');

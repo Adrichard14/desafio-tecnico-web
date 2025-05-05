@@ -1,0 +1,78 @@
+#login-section {
+    min-height: calc(100vh - 122px);
+}
+
+#login-card {
+    background: rgba(35, 34, 37);
+    color: #FFFFFF;
+}
+
+#login-form input {
+    padding: 15px;
+    width: 100%;
+    border: 1px solid rgba(60, 57, 63, 1);
+    background: rgba(26, 25, 27, 1);
+    color: #FFFFFF;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+#login-form input:active,
+#login-form input:focus {
+    border-color: #8E4EC6;
+    outline: none;
+}
+
+#login-form label {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 12px;
+    color: #EEEEF0;
+}
+
+#login-form #forgot-pwd {
+    color: #8E4EC6;
+    font-family: "Roboto";
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 58px 0 0;
+    /* Height of navbar */
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    width: 50vw;
+    z-index: 600;
+}
+
+@media (max-width: 991.98px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+.sidebar .active {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* Scrollable contents if viewport is shorter than content. */
+}
+
+.create-movie-sidebar {
+    background: #232225;
+}
+
+.create-movie-sidebar h5 {
+    color: #B5B2BC;
+}

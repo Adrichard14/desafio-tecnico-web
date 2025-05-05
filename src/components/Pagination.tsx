@@ -1,10 +1,10 @@
-import { TMDBMovie } from '../types/TMDBMovie';
 import arrowLeft from '../assets/chevron_left.svg';
 import arrowRight from '../assets/chevron_right.svg';
 import { useEffect, useState } from 'react';
+import { TMDBSingleMovie } from '../types/TMDBSingleMovie';
 
 interface PaginationProps {
-  movies: TMDBMovie[] | [];
+  movies: TMDBSingleMovie[] | [];
   totalPages: number;
   totalResults: number;
   currentPage: number;
